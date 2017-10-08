@@ -5,16 +5,7 @@ This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror
 Shows a table with all the players from your favorite team.
 
 ## Visualisation
-
-| Keeper            | Keeper            | Keeper  
-|----               |----               |----
-| rightBack         | centreBack        | leftBack
-| defensiveMidfield | defensiveMidfield | defensiveMidfield
-| rightMidfield     | centralMidfield   | leftMidfield
-| attackingMidfield | attackingMidfield | attackingMidfield
-| secondaryStriker  | secondaryStriker  | secondaryStriker
-| rightWing         | centreForward     | leftWing
-
+![visualisation of the court](https://forum.magicmirror.builders/assets/uploads/files/1507461935811-all-player.png)
 
 ## Using the module
 Install the package football-data-api.
