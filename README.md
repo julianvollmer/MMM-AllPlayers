@@ -9,10 +9,10 @@ Shows a table with all the players from your favorite team.
 |                   | Keeper            |  
 |----               |----               |----
 | rightBack         | centreBack        | leftBack
-|                   | defensiveMidfield |
+| defensiveMidfield | defensiveMidfield | defensiveMidfield
 | rightMidfield     | centralMidfield   | leftMidfield
-|                   | attackingMidfield |
-|                   | secondaryStriker  |
+| attackingMidfield | attackingMidfield | attackingMidfield
+| secondaryStriker  | secondaryStriker  | secondaryStriker
 | rightWing         | centreForward     | leftWing
 
 
