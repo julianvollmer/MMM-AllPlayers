@@ -6,7 +6,7 @@ Shows a table with all the players from your favorite team.
 
 ## Visualisation
 
-|                   | Keeper            |  
+| Keeper            | Keeper            | Keeper  
 |----               |----               |----
 | rightBack         | centreBack        | leftBack
 | defensiveMidfield | defensiveMidfield | defensiveMidfield
