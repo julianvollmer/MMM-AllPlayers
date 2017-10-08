@@ -1,4 +1,4 @@
-# MMM-AllPlayer
+# MMM-AllPlayers
 
 This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror/).
 
@@ -11,11 +11,17 @@ To use this module, add the following configuration block to the modules array i
 var config = {
     modules: [
         {
-            module: '{{MODULE_NAME}}',
-            config: {
-                // See below for configurable options
-            }
-        }
+	        module: 'MMM-AllPlayers',
+	        position: 'top_center',  // This can be any of the regions. Best results in left or right regions.
+	        header: 'Alle Spieler', // Topic of your modul.
+		    config: {
+	            options: {
+		          headers: {'X-Auth-Token': 'YOUR_TOKEN'},
+		          shortNameLeague: "BL1", //Short name of your League.
+		          shortNameTeam: "HSV", //Short name of your team. Team must be in the League.
+		        },
+		    }
+		}
     ]
 }
 ```
@@ -24,5 +30,12 @@ var config = {
 
 | Option           | Description
 |----------------- |-----------
-| `option1`        | *Required* DESCRIPTION HERE
-| `option2`        | *Optional* DESCRIPTION HERE TOO <br><br>**Type:** `int`(milliseconds) <br>Default 60000 milliseconds (1 minute)
+| `X-Auth-Token`    		| *Required* You can get it from [here](http://football-data.org/index).
+| `shortNameLeague`        	| *Required* Short name of your League
+| `shortNameTeam`        	| *Required* Short name of your team. Team must be in the League.
+
+
+
+
+
+
