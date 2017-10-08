@@ -4,6 +4,18 @@ This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror
 
 Shows a table with all the players from your favorite team.
 
+## Visualisation
+
+|                    Keeper            |  
+|----               |----               |----
+| rightBack         | centreBack        | leftBack
+|                   | defensiveMidfield |
+| rightMidfield     | centralMidfield   | leftMidfield
+|                   | attackingMidfield |
+|                   | secondaryStriker  |
+| rightWing         | centreForward     | leftWing
+
+
 ## Using the module
 Install the package football-data-api.
 ```js
@@ -32,8 +44,8 @@ var config = {
 
 ## Configuration options
 
-| Option           | Description
-|----------------- |-----------
+| Option                    | Description
+|-------------------------- |-----------
 | `X-Auth-Token`    		| *Required* You can get it from [here](http://football-data.org/index).
 | `shortNameLeague`        	| *Required* Short name of your League
 | `shortNameTeam`        	| *Required* Short name of your team. Team must be in the League.
