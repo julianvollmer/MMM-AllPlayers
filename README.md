@@ -8,7 +8,7 @@ Shows a table with all the players from your favorite team.
 Install the package football-data-api.
 ```js
 npm install football-data-api
-´´´
+```
 
 To use this module, add the following configuration block to the modules array in the `config/config.js` file:
 ```js
