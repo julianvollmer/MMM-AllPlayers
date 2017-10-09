@@ -8,7 +8,7 @@ module.exports = NodeHelper.create({
 		
 		if(notification === "CONNECTED"){
 			console.log(this.name + " received a socket notification: " + notification);
-			fball = new Football(payload)
+			fball = new Football(payload,this)
 		}
 
 		if (notification === "LOG"){
@@ -24,15 +24,16 @@ module.exports = NodeHelper.create({
 
     start: function() {        
         this.sendSocketNotification("CONNECTED", "connected");
-        this.update();
     },
 
     update: function () {
     	var self = this;
         self.sendSocketNotification("UPDATEUI", "options");
-        setTimeout(function() {
-        	self.sendSocketNotification("GET_ALL_PLAYERS", fball.players.getPlayers());
-        }, 20000);
+        self.sendSocketNotification("GET_ALL_PLAYERS", fball.players.getPlayers());
+    },
+
+    callbackFromFootballApi: function (argument) {
+    	this.update();
     }
 });
 
